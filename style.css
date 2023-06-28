@@ -11,8 +11,25 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.center {
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+}
+
 .header {
     margin: 40px 0 84px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper img {
+    margin-right: 14px;
 }
 
 .logo-wrapper span {
@@ -22,6 +39,11 @@ body {
 
 .logo-wrapper span:last-child {
     color: #F25822;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
 }
 
 .nav-item {
@@ -34,24 +56,35 @@ body {
     color: #F25822;
 }
 
+.nav-item.dropdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .nav-item.dropdown:after {
     content: "";
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 8px;
+    height: 5px;
     background-image: url("img/chevron-down.svg");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
 }
 
 .top {
     margin-bottom: 269px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .top__title {
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 17px;
+    width: 522px;
 }
 
 .top__text {
@@ -60,10 +93,16 @@ body {
     margin-bottom: 37px;
 }
 
+.top__buttons {
+    display: flex;
+    gap: 72px;
+}
+
 .btn {
     background: none;
     border: none;
     padding: 0;
+    cursor: pointer;
 }
 
 .bnt-primary {
@@ -76,6 +115,16 @@ body {
     font-weight: 600;
 }
 
+.btn-text {
+    color: #AAA;
+    font-size: 15px;
+    font-weight: 700;
+}
+
 .partners {
     margin-bottom: 96px;
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
